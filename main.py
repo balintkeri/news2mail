@@ -19,7 +19,7 @@ def getTelexLegfrissebb():
   r = requests.get('https://telex.hu/legfrissebb')
 
   data = r.text
-  parsed_html = BeautifulSoup(data)
+  parsed_html = BeautifulSoup(data, features="html.parser)
 
   data = []
 
