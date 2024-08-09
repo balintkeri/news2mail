@@ -5,12 +5,6 @@ import requests
 
 from bs4 import BeautifulSoup
 
-from flask import Flask
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'GreyMatters'
 
 DOMAIN  = os.environ['MAIL_DOMAIN'] 
 KEY     = os.environ['MAIL_KEY'] 
